@@ -57,6 +57,8 @@ function draw() {
     if (crash.hits(b)) {
       console.log('game over');
       noLoop();
+      window.location.reload();
+
     }
   }
 
