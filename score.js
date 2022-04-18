@@ -13,7 +13,7 @@ function updateTime()
    document.getElementById( "score" ).innerHTML = seconds;
 } // end function updateTime
 
-if (alert('game over')) { 
+if (alert(''GAME OVER \nPLAY AGAIN'')) { 
     seconds= 0 ;
 }
 
