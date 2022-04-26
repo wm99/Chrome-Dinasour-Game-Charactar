@@ -1,4 +1,4 @@
-var seconds = 0;
+var score = 0;
 
 // called when the page loads to begin the timer
 function startTimer() 
@@ -9,14 +9,13 @@ function startTimer()
 // called every 1000 ms to update the timer
 function updateTime()
 {
-   ++seconds;                
-   document.getElementById( "score" ).innerHTML = seconds;
+   ++score;                
+   document.getElementById( "score" ).innerHTML = score;
 } // end function updateTime
 
-if (alert(''GAME OVER \nPLAY AGAIN'')) { 
-    seconds= 0 ;
+if (alert('GAME OVER \nPLAY AGAIN')) { 
+    score= 0 ;
 }
 
 
 window.addEventListener( "load", startTimer, false );
-
