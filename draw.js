@@ -42,6 +42,8 @@ function gotCommand(error, results) {
 function keyPressed() {
   if (key == ' ') {
     crash.jump();
+    ++k;
+  document.getElementById( "key" ).innerHTML = k;
   }
 }
 
