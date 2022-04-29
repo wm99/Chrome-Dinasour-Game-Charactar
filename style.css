@@ -74,4 +74,24 @@ form, .content {
       display: block;
       background-repeat: full;
     }
+
+      .style{ 
+    position: relative;
+    margin: 10%;
+    width: 300px;
+    height: 150px;
+    float: left;
+    background-color:rgb(169, 226, 131);
+    border-radius: 5px;
+    border-width: medium;
+    /* border: solid; */
+     padding: 40px;
+    margin-left: 5%;
+      margin-top: 20%;
+  
+      }
+      .styl{ 
+        font-size: large;
+        
+      }
    
