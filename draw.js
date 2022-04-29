@@ -10,6 +10,8 @@ let kImg;
 let bxImg;
 let bImg;
 let boxes = [];
+var k = 0;
+var highest=0;
 
 function preload() {
   const options = {
@@ -43,7 +45,7 @@ function keyPressed() {
   if (key == ' ') {
     crash.jump();
     ++k;
-  document.getElementById( "key" ).innerHTML = k;
+  document.getElementById( "key" ).innerHTML= k;
   }
 }
 
@@ -57,13 +59,19 @@ function draw() {
     b.move();
     b.show();
     if (crash.hits(b)) {
-      console.log('game over');
+      // console.log('game over'+key); 
+      // if (alert('GAME OVER \nPLAY AGAIN'+k)) {
+        //  score= 0 ;
+        //  }
+        var  button = document.getElementById('bttn');
+        button.addEventListener('click', keyPressed, false);
       noLoop();
-      window.location.reload();
-
+      // window.location.reload();
+     
     }
   }
 
   crash.show();
   crash.move();
 }
+
