@@ -12,9 +12,16 @@
 </head>
 <body>
 <body>
-  <h2> score : <span id = "score">0</span> </h2>
-  <h2> key: <span id = "key"></span> </h2>
-  <h2>  highest score : <span id = "highestScore">0</span> </h2>
+	<div class="style">
+  
+  <h2 class= "styl" > key: <span id = "key"></span> </h2>
+ <h2 class = "styl"> Enter ur key to show the highest scores : <input class="styl" id="ke" type="text" name="key" ></h2>
+<br> <input class= "styl" type="submit" id="bttn" value="Result">
+    
+    <input class= "styl" type="button" value="Play Again" onClick="document.location.reload(true)">
+
+  </div>
+
   <h2> highest score from database : <?php echo $user_data['score'];?></h2> 
   <script src="score.js"></script>
   <script src="crash.js"></script>
