@@ -63,9 +63,7 @@ function draw() {
       // if (alert('GAME OVER \nPLAY AGAIN'+k)) {
         //  score= 0 ;
         //  }
-        var  button = document.getElementById('bttn');
-        button.addEventListener('click', keyPressed, false);
-      noLoop();
+       
       // window.location.reload();
      
     }
