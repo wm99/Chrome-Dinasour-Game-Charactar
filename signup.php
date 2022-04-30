@@ -52,33 +52,46 @@ session_start();
 
 		padding: 10px;
 		width: 100px;
-		color: white;
+		color: black;
+		font-weight: bold;
 		background-color: lightblue;
 		border: none;
 	}
 
 	#box{
 
-		background-color: grey;
+		background-color: rgba(249, 242, 242, 0.717);
 		margin: auto;
 		width: 300px;
 		padding: 20px;
 	}
-
+	body 
+    {
+       
+        background-image: url(backg.jpg);
+        background-position: center;
+        background-size: cover;}
+	a{
+       text-decoration:none;
+     }
+    a:hover{
+    color:white;
+}
 	</style>
 
-	<div id="box">
+	<div id="box" ALIGN="center">
 		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
+			<div style="font-size: 20px;margin: 10px;color: black;">Signup</div>
 
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
+			<input id="text" type="text" name="user_name" placeholder="UserName"><br><br>
+			<input id="text" type="password" name="password" placeholder="*****"><br><br>
 
-			<input id="button" type="submit" value="Signup"><br><br>
+			<input id="button" type="submit" value="Signup" ><br><br>
 
 			<a href="login.php">Click to Login</a><br><br>
 		</form>
 	</div>
 </body>
 </html>
+
