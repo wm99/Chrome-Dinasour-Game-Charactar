@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+  
+	$user_data = check_login($con);
+
+  
+?>
 
 <!DOCTYPE html>
 <html>
@@ -12,21 +23,21 @@
 </head>
 <body>
 <body>
-	<div class="style">
-  
-  <h2 class= "styl" > key: <span id = "key"></span> </h2>
- <h2 class = "styl"> Enter ur key to show the highest scores : <input class="styl" id="ke" type="text" name="key" ></h2>
-<br> <input class= "styl" type="submit" id="bttn" value="Result">
+<div class="style">
+  <p class="p">Welcome, <?php echo $user_data['user_name']; ?> </p>
+  <form method="post" action="score.php">
+ <p class = "styl"> Your score counter : <input class="styl" id="ke" type="text" name="key" ></p>
+<input  class="button"  type="submit" id="bttn" value="Save your score">
+
+</form>
+    <a href="show.php">show all scores </a>	 <br>    
+    <a  href="logout.php">Logout</a>
     
-    <input class= "styl" type="button" value="Play Again" onClick="document.location.reload(true)">
-
-  </div>
-
-  <h2> highest score from database : <?php echo $user_data['score'];?></h2> 
-  <script src="score.js"></script>
+</div>
+</body>
   <script src="crash.js"></script>
   <script src="box.js"></script>
   <script src="draw.js"></script>
 </body>
-</html>
 
+</html>
