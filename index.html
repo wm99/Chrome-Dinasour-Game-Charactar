@@ -24,15 +24,15 @@ session_start();
 <body>
 <body>
 <div class="style">
-  <p>Welcome, <?php echo $user_data['user_name']; ?> </p>
+    <table border ="1">
+  <p >Welcome, <?php echo $user_data['user_name']; ?> </p>
   <form method="post" action="score.php">
  <p class = "styl"> Your score counter : <input class="styl" id="ke" type="text" name="key" ></p>
-<input type="submit" id="button" value="Save your score">
-
+<input  type="submit" id="button" value="Save your score"><br> 
 </form>
-    <a href="show.php">show all scores </a>	 <br>    
-    <a  href="logout.php">Logout</a>
-    
+    <a href="show.php">Show all scores </a>	.    
+    <a href="logout.php">Logout</a>
+</table>
 </div>
 </body>
   <script src="crash.js"></script>
