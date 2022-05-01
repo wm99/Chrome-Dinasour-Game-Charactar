@@ -1,14 +1,4 @@
-.success {
-  color: #3c763d; 
-  background: #dff0d8; 
-  border: 1px solid #3c763d;
-  margin-bottom: 20px;}
-  
-  html, body {
-      margin: 0;
-      padding: 0;
-    }
-    canvas {
+canvas {
       display: block;
       background-repeat: full;
     }
@@ -24,7 +14,7 @@
           position: relative;
           margin: 10%;
           width: 300px;
-          height: 150px;
+          height: 200px;
           float: left;
           background-color:rgba(249, 242, 242, 0.717);
           border-radius: 5px;
@@ -46,7 +36,6 @@
             #button{
 
               padding: 10px;
-              width: 100px;
               color: black;
               font-weight: bold;
               background-color: lightblue;
@@ -54,7 +43,11 @@
             }
             a{
               text-decoration:none;
+              color:black;
           }
           a:hover{
               color:white;
+          }
+          td {
+            padding: 10px;
           }
