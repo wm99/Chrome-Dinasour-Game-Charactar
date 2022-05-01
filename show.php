@@ -84,11 +84,12 @@ body
        padding: 20px;
 }
 a{
-    text-decoration:none;
-}
-a:hover{
-    color:white;
-}
+        text-decoration:none;
+        color:black;
+    }
+    a:hover{
+        color:white;
+    }
 	</style>
 <body>
 <div id="box" ALIGN="center">
