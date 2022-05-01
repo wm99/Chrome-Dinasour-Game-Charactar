@@ -72,11 +72,12 @@ session_start();
         background-position: center;
         background-size: cover;}
 	a{
-       text-decoration:none;
-     }
+        text-decoration:none;
+        color:black;
+    }
     a:hover{
-    color:white;
-}
+        color:white;
+    }
 	</style>
 
 	<div id="box" ALIGN="center">
@@ -94,4 +95,3 @@ session_start();
 	</div>
 </body>
 </html>
-
