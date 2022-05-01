@@ -100,10 +100,11 @@ session_start();
 		padding: 20px;
 	}
 	a{
-    text-decoration:none;
+        text-decoration:none;
+        color:black;
     }
     a:hover{
-    color:white;
+        color:white;
     }
 
 	</style>
