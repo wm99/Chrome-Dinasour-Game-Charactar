@@ -17,10 +17,10 @@ The third component is to define the functions that let the player jump and stop
 
 ## 4. Business Logic 
 Our game is connected with a database that allows players to register, log in, and show the highest player scores to make it more competitive. The database contains five columns listed in a table called "users." The table includes the information that we need for each user. The first column is the user ID, the second is the user's name, the third is the password, the fourth is the registration date, and finally, the player's score. In the implementation step of PHP, we used several queries:
-1-	INSERT * INTO users: a SQL query to store the player's username, password, and scores.
-2-	SELECT * FROM users: used to display the scores for all players in increasing order.
-3- SELECT MAX (score) as max, MIN (score) as min FROM users: used to print highest and lowest score for all players.
-4- SELECT* FROM users WHERE user_name = '$user_name' limit 1: used to that the user can log in to match their data entered to store in the database.
+1.	INSERT * INTO users: a SQL query to store the player's username, password, and scores.
+2.	SELECT * FROM users: used to display the scores for all players in increasing order.
+3. SELECT MAX (score) as max, MIN (score) as min FROM users: used to print highest and lowest score for all players.
+4. SELECT* FROM users WHERE user_name = '$user_name' limit 1: used to that the user can log in to match their data entered to store in the database.
 
 We allowed the player to compare their score with the score of all players and showed the lowest and highest score. Players can track their scores in each game using GET and POST methods. GET is used to bring the data from the database, whereas POST is used to send the data entered by the user to the database.
 ## References
