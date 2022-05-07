@@ -4,10 +4,6 @@ session_start();
 	include("connection.php");
 	include("functions.php");
     $user_data = check_login($con);
-    $tableName='users';
-    $columns=['user_name','score',];
-    $query = "SELECT * FROM users";
-       $result = mysqli_query($con, $query);
     ?>
 <?php 
 
