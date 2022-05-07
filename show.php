@@ -95,8 +95,8 @@ a{
 <div id="box" ALIGN="center">
 			<table>
 				<tr>
-					<th><a <?php echo $asc_or_desc; ?>">Players<i <?php echo $column == 'user_name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-					<th><a <?php echo $asc_or_desc; ?>">Scores<i<?php echo $column == 'score' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+					<th>Players</th>
+					<th>Scores</th>
 					
 				</tr>
 				<?php while ($row = $result->fetch_assoc()): ?>
